@@ -1,6 +1,6 @@
 {
-    "name": "chevere/reponame",
-    "description": "A chevere reponame package",
+    "name": "chevere/var-support",
+    "description": "A chevere var-support package",
     "homepage": "https://chevere.org",
     "type": "library",
     "license": "Apache-2.0",
@@ -12,7 +12,10 @@
         }
     ],
     "require": {
-        "chevere/chevere": "^3.0"
+        "php": "^8.1",
+        "chevere/iterator": "^1.0",
+        "chevere/message": "^0.1.0",
+        "symfony/var-exporter": "^7.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.9",
@@ -24,7 +27,7 @@
             "src/functions.php"
         ],
         "psr-4": {
-            "Chevere\\%namespace%\\": "src/"
+            "Chevere\\VarSupport\\": "src/"
         }
     },
     "autoload-dev": {
