@@ -17,7 +17,7 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=chevere_var-support&metric=coverage)](https://sonarcloud.io/dashboard?id=chevere_var-support)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=chevere_var-support&metric=sqale_index)](https://sonarcloud.io/dashboard?id=chevere_var-support)
 [![CodeFactor](https://www.codefactor.io/repository/github/chevere/var-support/badge)](https://www.codefactor.io/repository/github/chevere/var-support)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b956754f8ff04aaa9ca24a6e4cc21661)](https://app.codacy.com/gh/chevere/var-support/dashboard)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/942c2ea1ac7846758c25a3c7810f06eb)](https://app.codacy.com/gh/chevere/var-support/dashboard)
 
 ## Documentation
 
