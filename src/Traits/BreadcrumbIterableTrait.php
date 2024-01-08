@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace Chevere\VarSupport\Traits;
 
-use Chevere\Iterator\Interfaces\BreadcrumbInterface;
 use Chevere\VarSupport\Exceptions\ObjectNotClonableException;
+use Chevere\VarSupport\Interfaces\BreadcrumbInterface;
 use OutOfBoundsException;
 
 trait BreadcrumbIterableTrait

@@ -13,9 +13,8 @@ declare(strict_types=1);
 
 namespace Chevere\VarSupport;
 
-use Chevere\Iterator\Breadcrumb;
-use Chevere\Iterator\Interfaces\BreadcrumbInterface;
 use Chevere\VarSupport\Exceptions\UnableToStoreException;
+use Chevere\VarSupport\Interfaces\BreadcrumbInterface;
 use Chevere\VarSupport\Interfaces\StorableVariableInterface;
 use Chevere\VarSupport\Traits\BreadcrumbIterableTrait;
 use ReflectionNamedType;
