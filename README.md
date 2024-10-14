@@ -1,7 +1,5 @@
 # VarSupport
 
-> 🔔 Subscribe to the [newsletter](https://chv.to/chevere-newsletter) to don't miss any update regarding Chevere.
-
 ![Chevere](chevere.svg)
 
 [![Build](https://img.shields.io/github/actions/workflow/status/chevere/var-support/test.yml?branch=1.0&style=flat-square)](https://github.com/chevere/var-support/actions)
