@@ -14,7 +14,7 @@
     "require": {
         "php": "^8.1",
         "chevere/message": "^1.0.0",
-        "symfony/var-exporter": "^6.1|^7.0"
+        "symfony/var-exporter": "^6.1|^7.0|^8.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.9",
@@ -47,7 +47,7 @@
         ],
         "infection": [
             "Composer\\Config::disableProcessTimeout",
-            "infection --only-covered -j10"
+            "infection -j10"
         ],
         "infection-filter": "sh -c 'sh -c \"composer infection -- --filter=$0 --test-framework-options=--filter=$0\"' $1",
         "phpstan": "vendor/bin/phpstan analyze src/ --memory-limit 512M --level 9",
