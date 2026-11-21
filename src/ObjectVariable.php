@@ -19,7 +19,6 @@ use Chevere\VarSupport\Interfaces\ObjectVariableInterface;
 use Chevere\VarSupport\Traits\BreadcrumbIterableTrait;
 use ReflectionNamedType;
 use ReflectionObject;
-use function Chevere\Message\message;
 
 final class ObjectVariable implements ObjectVariableInterface
 {
@@ -63,9 +62,9 @@ final class ObjectVariable implements ObjectVariableInterface
         $reflection = new ReflectionObject($variable);
         if (! $reflection->isCloneable()) {
             throw new ObjectNotClonableException(
-                (string) message(
-                    'Object is not clonable at `%at%`',
-                    at: $this->breadcrumb->__toString()
+                sprintf(
+                    'Object is not clonable at `%s`',
+                    $this->breadcrumb->__toString()
                 )
             );
         }

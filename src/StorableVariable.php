@@ -20,7 +20,6 @@ use Chevere\VarSupport\Traits\BreadcrumbIterableTrait;
 use ReflectionNamedType;
 use ReflectionObject;
 use Symfony\Component\VarExporter\VarExporter;
-use function Chevere\Message\message;
 
 final class StorableVariable implements StorableVariableInterface
 {
@@ -72,13 +71,13 @@ final class StorableVariable implements StorableVariableInterface
             return;
         }
         $message = $this->breadcrumb->count() > 0
-            ? message(
-                'Argument contains a resource at `%at%`',
-                at: $this->breadcrumb->__toString()
+            ? sprintf(
+                'Argument contains a resource at `%s`',
+                $this->breadcrumb->__toString()
             )
-            : message('Argument is of type resource.');
+            : 'Argument is of type resource.';
 
-        throw new UnableToStoreException((string) $message);
+        throw new UnableToStoreException($message);
     }
 
     private function breadcrumbObject(object $variable, string $callable): void

@@ -15,7 +15,6 @@ namespace Chevere\VarSupport;
 
 use Chevere\VarSupport\Interfaces\BreadcrumbInterface;
 use OutOfBoundsException;
-use function Chevere\Message\message;
 
 final class Breadcrumb implements BreadcrumbInterface
 {
@@ -76,10 +75,7 @@ final class Breadcrumb implements BreadcrumbInterface
     {
         if (! array_key_exists($pos, $this->items)) {
             throw new OutOfBoundsException(
-                (string) message(
-                    'Pos `%pos%` not found',
-                    pos: $pos
-                )
+                sprintf('Pos `%s` not found', $pos)
             );
         }
         $new = clone $this;
